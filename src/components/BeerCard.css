@@ -1,0 +1,82 @@
+.beer-card {
+    display: flex;
+    align-items: flex-start;
+    background-color: #e3e1e1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    width: 600px;
+  }
+  
+  .beer-image {
+    background-color: #f5f3f3;
+    width: 100px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 20px;
+  }
+  
+  .beer-details {
+    flex-grow: 1;
+    padding: 16px;
+  }
+  
+  .beer-details h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .beer-details p {
+    margin: 18px 0;
+    font-size: 17px;
+    color: #555;
+  }
+  
+  .abv-chip,
+  .first-brewed-chip,
+  .ibu-chip {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    padding: 4px 8px;
+    border-radius: 16px;
+    margin-right: 8px;
+  }
+  
+  .read-more {
+    cursor: pointer;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .beer-card {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+    .beer-image {
+      width: 80px;
+      height: 160px;
+    }
+  
+    .abv-chip,
+    .first-brewed-chip,
+    .ibu-chip {
+      margin-top: 8px;
+      width: 0%;
+    }
+  
+    .beer-details {
+      padding: 8px;
+      text-align: center;
+    }
+  }
+  
